@@ -1,0 +1,77 @@
+.top{
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  gap: 12px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  @media only screen and (max-width:768px) {
+    height: 40px;
+  }
+}
+
+.role{
+   font-size: 18px;
+   font-weight: 600;
+    @media only screen and (max-width:768px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.company{
+   font-size: 14px;
+   font-weight: 500;
+    @media only screen and (max-width:768px) {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.services{
+  display: flex;
+  align-items: center;
+}
+
+.date{
+  font-size: 14px;
+  font-weight: 1000;
+}
+
+.cardParent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardImage{
+    width: 70px;
+    height: 60px;
+    border-radius: 16px;
+}
+
+.dateForRightPositionElem{
+    margin:20% 50px;
+    @media only screen and (max-width:768px) {
+        margin:10px
+    }
+}
+
+.dateForLeftPositionElem{
+  margin-top: 20%;
+  margin-left: -120px;
+   @media only screen and (max-width:768px) {
+        margin:10px
+    }
+}

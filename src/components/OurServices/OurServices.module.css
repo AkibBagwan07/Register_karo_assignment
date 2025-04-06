@@ -1,0 +1,51 @@
+.experienceSection{
+    order:4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    gap: 12px;
+    margin-top: 44px;
+    color: white;
+}
+
+.element{
+  margin-top: 50px;
+}
+
+
+
+.title{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.description{
+  font-size: 1.1rem;
+  color: #7f8185; 
+  line-height: 1.6;
+}
+
+.lineBeforeEducation{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  margin: 1% 10%;
+}
+
+@media (max-width:768px){
+ .lineBeforeEducation{
+    font-size: 16px;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1168px) {
+  .experienceSection{
+    width: 80%;
+  }
+}

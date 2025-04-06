@@ -1,0 +1,202 @@
+.reviewsParent {
+  width: 100%;
+  padding: 4rem 1rem;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-radius: 32px;
+  order: 5;
+}
+
+.Heading {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white; 
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #7f8185; 
+  line-height: 1.6;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.swiperContainer {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.swiper-container:hover {
+  pointer-events: auto;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.85), rgba(17, 24, 39, 0.9));
+  border: 2px solid transparent;
+  border-radius: 24px;
+  padding: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f9fafb;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  animation: fadeUp 0.7s ease both;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 2px;
+  background: linear-gradient(120deg, #facc15, #6366f1, #ec4899);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.details {
+  position: relative;
+  z-index: 1;
+}
+
+.reviewsTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+.projectDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+.tagsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.tags {
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leftNav,
+.rightNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftNav {
+  left: 8%;
+}
+
+.rightNav {
+  right: 8%;
+}
+
+.Arrow {
+  font-size: 2.2rem;
+  color: orange;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Arrow:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .projectTitle {
+    font-size: 1.5rem;
+  }
+
+  .projectDescription {
+    font-size: 1rem;
+  }
+
+  .tags {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .Arrow {
+    font-size: 2rem;
+  }
+}
+
+.postedByLabel {
+  font-size: 16px;
+  color: #bbb;
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+.postedByCompany {
+  font-size: 20px;
+  font-weight: 700;
+  color: orange;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+}

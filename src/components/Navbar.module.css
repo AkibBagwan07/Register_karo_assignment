@@ -1,0 +1,162 @@
+.navbarParent{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      width: 100vw;  
+  position: relative; 
+  overflow-x: hidden; 
+  z-index: 999;      
+    }
+
+    .logo > a {
+        text-decoration: none;
+     color: white;
+     display: flex;
+     align-items: center;
+     font-size: medium;
+     font-weight: 600;
+    }
+
+    .karoText{
+        margin-left: 4px;
+        color: orange;
+    }
+
+    .logoImage{
+        width: 27%;
+    }
+
+ .infoBtns > a ,.socialPlatformsBtn > a {
+    text-decoration: none;
+     color: white;
+}
+    .logo > a:hover , .infoBtns > a:hover {
+         color: orange;
+         cursor: pointer;
+         transition: all 0.2s ease-in-out;
+    }
+
+.infoBtns{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.socialPlatformsBtn{
+    display: flex;
+}
+
+.githubIcon{
+    height: 30px;
+    width: 50px;
+}
+
+.linkedinIcon{
+    height: 30px;
+    width: 50px;
+}
+
+.gmailIcon{
+    height: 30px;
+    width: 50px;
+}
+
+.githubIcon:hover ,.linkedinIcon:hover {
+    color: orange;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.menubar{
+    display: none;
+    height: 24px;
+    width: 40px;
+}
+
+.menubar:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .menubar{
+    display: block;
+  }
+  .githubIcon,.linkedinIcon{
+    display: none;
+  }
+  .infoBtns{
+    display: none;
+  }
+}
+
+.infoBtnsMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    left: 20px;
+    position: absolute;
+    top: 80px;
+}
+
+.infoBtnsMobile > a ,.mobileSocialLinks>a{
+    text-decoration: none;
+    color: black;
+    margin-top: 8px;
+}
+
+.infoBtnsMobile > a:hover ,.mobileSocialLinks > a:hover{
+   color: #854CE6;
+   transition: all 0.2s ease-in-out;
+   margin-top: 16px;
+}
+
+.mobileSocialLinks{
+     display: flex;
+    flex-direction: column;
+    align-items: start;
+    right: 20px;
+    position: absolute;
+    top: 100px;
+    gap: 30px;
+}
+
+.linkedinIconForMobile{
+    width: 40px;
+    height: 40px;
+}
+
+.githubIconForMobile{
+   width: 30px;
+    height: 30px;
+}
+
+.infoBtnsMobile {
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+}
+
+.mobileSocialLinks {
+    display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 12px;
+  padding-left: 16px;
+}
+
+.socialPlatformsBtn {
+  display: flex;
+  position: relative;
+}

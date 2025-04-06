@@ -1,0 +1,124 @@
+.whyChooseUsParent{
+    order:2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    gap: 12px;
+}
+.whyChooseUsImageParent{
+  width: 100%;
+  order: 1!;
+  margin-left: 16%;
+}
+
+.whyChooseUsImage{
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  cursor: pointer;
+  max-width: 480px;
+  max-height: 480px;
+  border: 1.5px solid orange;
+}
+
+.title{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+.description{
+font-size: 1.1rem;
+  color: #7f8185; 
+  line-height: 1.6;
+}
+
+@media (max-width:768px){
+  .title {
+    font-size: 30px; 
+ }
+ .description{
+    font-size: 16px;
+ }
+}
+
+.whyChooseUsContainer{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 18px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.whyChooseUs{
+    width: 100%;
+    max-width: 480px;
+    background-color: rgba(17, 25, 40, 0.83);
+    box-shadow: 1px solid rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 16px;
+    padding: 18px 36px;
+    margin: 0px 8px;
+
+ @media (max-width:768px) {
+    max-width: 350px;
+    padding: 10px 36px;
+ }
+
+
+ @media (max-width:500px) {
+    max-width: 300px;
+    padding: 10px 36px;
+ }
+}
+
+.techTitle{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skillList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.whyChooseUsItemParent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.whyChooseUsItem{
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid gray;
+  padding: 8px;
+  gap: 12px;
+  border-radius: 8px;
+  @media (max-width:600px) {
+    font-size: 14px;
+  }
+}
+
+.checkImage{
+    width: 24px;
+    height: 24px;
+    color: orange; 
+}
+
+
+ 

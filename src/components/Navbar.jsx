@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styles from "./Navbar.module.css"
-import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 

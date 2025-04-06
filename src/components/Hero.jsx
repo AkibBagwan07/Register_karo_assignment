@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
-import styles from "./hero.module.css"
+import styles from "./Hero.module.css"
 import Typewriter from "typewriter-effect"
 import HeroBgAnimation from "../HeroBgAnimation"
 import {headContentAnimation, headContainerAnimation, headTextAnimation } from '../utils/motion' 
